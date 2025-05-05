@@ -1,32 +1,45 @@
-<html>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
     <style>
         body {
-            background: url('red_roses_bg.jpg') no-repeat center center fixed;
+            margin: 0;
+            padding: 0;
+            background-image: url('roses.jpg');
             background-size: cover;
-            color: white;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-family: Arial, sans-serif;
-            text-align: center;
-            padding-top: 20%;
         }
         #message {
-            display: none;
-            font-size: 2em;
             background-color: rgba(0, 0, 0, 0.6);
-            padding: 20px;
-            border-radius: 10px;
-            display: inline-block;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 12px;
+            font-size: 24px;
+            display: none;
+            animation: fadeIn 2s forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
-    <script>
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('message').style.display = 'inline-block';
-            }, 4000); // show after 4 seconds
-        }
-    </script>
 </head>
 <body>
     <div id="message">Happy Birthday to the Most Beautiful Person in my Life</div>
+
+    <script>
+        setTimeout(function() {
+            document.getElementById('message').style.display = 'block';
+        }, 4000); // 4 second delay
+    </script>
 </body>
 </html>
