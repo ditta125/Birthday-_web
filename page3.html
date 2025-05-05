@@ -1,11 +1,32 @@
 <html>
-    <head><style>
-    body {
-        background: url('romantic_names_bg.jpg') no-repeat center center fixed;
-        background-size: cover;
-    }
-    </style></head>
-    <body>
-        <h1>Happy Birthday to the most beautiful person in my life</h1>
-    </body>
-    </html>
+<head>
+    <style>
+        body {
+            background: url('red_roses_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 20%;
+        }
+        #message {
+            display: none;
+            font-size: 2em;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('message').style.display = 'inline-block';
+            }, 4000); // show after 4 seconds
+        }
+    </script>
+</head>
+<body>
+    <div id="message">Happy Birthday to the Most Beautiful Person in my Life</div>
+</body>
+</html>
